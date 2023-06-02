@@ -1,0 +1,219 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+.maincontainer{
+    min-height: 100vh;
+    min-width: 100%;
+    display: inline-block;
+    justify-content: center;
+    padding-top:50px;
+    padding-left:50px;
+    padding-right: 50px;
+   
+}
+.second{
+    height: 100vh;
+    width: 70%;
+    display: inline-block;
+}
+.loginTrue{
+    height:110px;
+    width: 100%;
+   
+}
+.loginNumberCount
+{
+    font-size: 12px;
+    color: #2874f0;
+    background-color: #f0f0f0;
+    border-radius: 2px;
+    padding: 3px 7px;
+    vertical-align: baseline;
+    margin-right: 17px;
+    width: 21px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.name{
+    height: 70px;
+    width: 25%;
+    
+    display: inline-table;
+    margin-top: 20px;
+}
+.UserName{
+    height: 59%;
+    width: 100%;
+   
+    display: block;
+    padding-top: 7px;
+    margin: 0; 
+}
+.UserDetails{
+    height: 35%;
+    width: 100%;
+   
+    margin-top: 4px;
+    padding-top: 3px; 
+}
+.UserName h3{
+    font-size: 24px;
+    margin: 0;
+}
+.UserDetails h3{
+    font-size: 15px;
+    margin: 0;
+}
+.btnchange{
+    height: 40px;
+    width: 100px;
+    float: right;
+    margin-top: 30px;
+    border:2px solid #8A39E1;
+    color: #8A39E1;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#collapseExample{
+    width:100%;
+    
+}
+.collapse.in{
+    display: block;
+}
+.nameCollapse{
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+   
+    margin-top: 25px;padding-top: 10px;
+    padding-left: 20px;
+
+}
+.mobileNumberCollapse{
+    height: 50%;
+    width: 100%;
+    padding-left: 20px;
+
+}
+.card-body{
+    font-size: 20px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    
+}
+#linkLogout{
+    font-weight: 700;
+    margin-left: 20px;
+    display: block;
+    font-size: 14px;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+.btnCheckOut{
+    height: 50px;
+    width: 238px;
+    margin-left: 20px;
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #8A39E1;
+    color: white;
+    border-radius: 0;
+}
+.bill{
+    
+    width: 25%;
+    
+    display: inline-block;
+    margin-top: 50px;
+    float: right;
+    margin-right: 77px;
+    padding: 0;
+    
+}
+.priceOfItemcontainer{
+    display: block;
+    height: 20%;
+    width: 100%;
+    padding: 17px;
+}
+#priceOfItems{
+    font-size: 22px;
+    font-family: ui-sans-serif;
+    font-weight: normal;
+}
+#deliveryChargeOfItems{
+    font-size: 22px;
+    font-family: ui-sans-serif;
+    font-weight: normal;
+}
+.TotalPayableContainer{
+    display: block;
+    height: 20%;
+    width: 100%;
+    padding: 17px;
+}
+.TotalSavingsContainer{
+    justify-content: center;
+    font-size: 15px;
+    display: flex;
+    color: green;
+}
+#lblSavingOfItems{
+    font-size: 18px;
+    font-family: ui-sans-serif;
+    font-weight: normal;
+}
+.DeliveryChargesContainer{
+    display: block;
+    height: 20%;
+    width: 100%;
+    padding: 17px;
+}
+.deliveryAddresscontainer{
+   
+    width: 100%;
+    
+    margin-top: 15px;
+    padding:0;
+}
+.DeliveryAddressHeading{
+    height: 50px;
+    width: 100%;
+    padding:10px;
+    background-color: #8A39E1;
+    color: white;
+    font-size: 20px;
+    
+}
+.FirstAddressContainer{
+    padding: 15px;
+    width: 100%;
+    
+}
+.form-check{
+    font-size: 15px;
+}
+#btnDeliverHere{
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    background-color: #8A39E1;
+    color: white;
+    border:0;
+}
+
+#btnDeliverHere1{
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    background-color: #8A39E1;
+    color: white;
+    border:0;
+}

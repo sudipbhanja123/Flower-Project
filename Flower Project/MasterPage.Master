@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Flower_Project.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>--%>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<style>
+
+
+.navbtn
+{
+   color:#712B75;
+}
+.navbtn:hover
+{
+  color:#712B75;
+  background-color: #FBDFF0;  
+}
+</style>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div class="Wrapper ">
+      
+         <div class="d-flex justify-content-start  mb-3 ps-5 py-2 gap-3 align-items-center border border-1">
+              <div class="p-2  ms-5 fs-2" style="font-family: 'Dancing Script', cursive;">Lovely</div>
+              <input type="text" placeholder="Search for products..."  class="shadow-none rounded-0 form-control ms-5 " style="width:550px;"></input>
+              <i class="bi bi-cart  text-primary" style="font-size:22px;"></i> 
+             
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle rounded-0 shadow-none text-primary" type="button" data-toggle="dropdown"><i class="bi bi-person-fill text-primary" style="font-size:22px;" ></i></button>
+                    <ul class="dropdown-menu ">
+                       <li ><button type="button" class="btn  text-primary w-100 d-flex justify-content-start align-items-center" style="font-size:17px;"> <i class="bi bi-person-circle pe-3"></i>Account</button></li>
+                       <li><button type="button" class="btn text-primary w-100 d-flex justify-content-start align-items-center" style="font-size:17px;"> <i class="bi bi-list-ul pe-3 "></i>Orders</button></li>
+                       <li><button type="button" class="btn text-primary w-100 d-flex justify-content-start align-items-center" style="font-size:17px;"> <i class="bi bi-bell-fill  pe-3 "></i>Notifications</button></li>
+                       <li><button type="button" class="btn text-primary w-100 d-flex justify-content-start align-items-center" style="font-size:17px;"> <i class="bi bi-box-arrow-left pe-3 "></i>Log Out</button></li>
+                    </ul>
+                  </div>
+                   
+                
+        </div>
+<%-------------------------------------------------Header End-------------------------------------------------%>
+<%------------------------------------------------Navbar-------------------------------------------%>
+        <div style="display:flex; flex-direction:row;">
+             <%-- <div class="Navbar d-flex justify-content-start" style="width:310px; height:450px;">--%>
+                       <!-- Home-->
+                       <div class=" card  d-flex justify-content-start  shadow" style="width:310px; height:450px;">
+                              <button type="button" class=" navbtn btn   rounded-0 shadow-none d-flex  justify-content-start  align-items-center" >
+                              <span class="btn-label  px-2"> <i class="bi bi-house-fill float-end" style="color:#712B75;"> </i> </span> 
+                                 Home 
+                              </button>
+                       <!--   Add -->
+                            <button type="button" class=" navbtn btn  rounded-0 shadow-none  d-flex justify-content-start  align-items-center " data-toggle="collapse" data-target="#Demo" >
+                            <span class="btn-label  px-2"> <i class="bi bi-plus-square float-end" style="color:#712B75;"> </i> </span> 
+                                 Add
+                             </button>
+                           <div  class="collapse   float-start" id="Demo">
+                                  <div class=" card card-body border border-0 " >
+                                        <button type="button" class="btn text-primary rounded-pill shadow w-100" > product</button>
+                                        <button type="button" class="btn text-primary rounded-pill shadow w-100 mt-2"> Slideshow</button>
+                                        <button type="button" class="btn text-primary rounded-pill shadow w-100 mt-2"> Catagory</button>
+                                  </div>
+                          </div>
+                      <!--   Edit --->
+                            <button type="button" class="  btn  navbtn rounded-0 shadow-none  d-flex justify-content-start  align-items-center" id="btnEdit" runat="server" onclick="return btnEdit_onclick()">
+                            <span class="btn-label  px-2 "> <i class="bi bi-pencil-square float-end " style="color:#712B75;"> </i>  </span>
+                             Edit
+                            </button>
+                      <!--   Remove -->
+                           <button type="button" class="btn  navbtn  rounded-0 shadow-none d-flex justify-content-start align-items-center " id="btnRemove" runat="server">
+                           <span class="btn-label  px-2 "> <i class="bi bi-dash-square float-end " style="color:#712B75;"> </i>  </span>
+                            Remove
+                           </button>
+                      <!--   Chart -->
+                           <button type="button" class="btn  navbtn  rounded-0 shadow-none d-flex justify-content-start align-items-center ">
+                           <span class="btn-label  px-2 "> <i class="bi bi-graph-up  float-end " style="color:#712B75;"> </i>  </span>
+                            Chart
+                           </button>
+                      <!--   Bank -->
+                           <button type="button" class="btn navbtn  rounded-0 shadow-none d-flex justify-content-start align-items-center ">
+                           <span class="btn-label  px-2 "> <i class="bi bi-bank2 float-end " style="color:#712B75;"> </i>  </span>
+                           Bank
+                           </button>
+                      <!--   Setting -->
+                           <button type="button" class="btn navbtn rounded-0 shadow-none d-flex justify-content-start align-items-center ">
+                           <span class="btn-label  px-2 "> <i class="bi bi-gear-fill float-end " style="color:#712B75;"> </i>  </span>
+                            Setting
+                           </button> 
+                           
+                   </div>
+
+        
+
+<%----------------------------------------------------------Navbar End---------------------------------------------%>
+
+
+    <%------------------------------------------------------  Content Page----------------------------------------%>
+            <div class="Content border border-1 ps-3 pt-1" style="width:100%; ">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderId" runat="server">
+    </asp:ContentPlaceHolder>
+            </div>
+
+            </div>
+   <%------------------------------------------------------ Content Page End-----------------------------------------%>
+            <%--Footer Page--%>
+        <div class="Footer">
+
+        </div>
+         
+    </div>
+   
+    </form>
+</body>
+</html>
